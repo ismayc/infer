@@ -39,8 +39,8 @@ deploy:
   local-dir: docs
   github_token: $GITHUB_PAT
   #repo: ismayc/inferdown
-  repo: andrewpbray/infer
-  target_branch: gh-pages
+  #repo: andrewpbray/infer
+  #target_branch: gh-pages
 
 after_success:
   - Rscript -e 'covr::codecov()'
