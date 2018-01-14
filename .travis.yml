@@ -34,7 +34,8 @@ script:
 
 deploy:
   provider: pages
-  skip_cleanup: true
+  skip-cleanup: true
+  keep-history: true
   #on:
   #  branch: master
   #local-dir: docs
