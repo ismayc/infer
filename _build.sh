@@ -1,1 +1,1 @@
-Rscript -e 'install.packages("remotes"); remotes::install_github("hadley/pkgdown"); pkgdown::build_site()'
+Rscript -e 'install.packages("remotes"); remotes::install_github("hadley/pkgdown"); remotes::install_github("andrewpbray/infer"); pkgdown::build_site()'
