@@ -36,13 +36,11 @@ deploy:
   provider: pages
   skip-cleanup: true
   keep-history: true
-  #on:
-  #  branch: master
-  #local-dir: docs
+  local-dir: docs
   github_token: $GITHUB_PAT
-  repo: ismayc/inferdown
-  #repo: andrewpbray/infer
-  #target_branch: gh-pages
+  #repo: ismayc/inferdown
+  repo: andrewpbray/infer
+  target_branch: gh-pages
 
 after_success:
   - Rscript -e 'covr::codecov()'
