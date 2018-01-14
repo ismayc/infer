@@ -19,8 +19,8 @@ notifications:
     on_success: change
     on_failure: change
 
-r_github_packages:
-  - hadley/pkgdown
+#r_github_packages:
+#  - hadley/pkgdown
 
 before_script:
   - chmod +x ./_build.sh
